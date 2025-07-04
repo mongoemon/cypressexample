@@ -27,7 +27,13 @@ This project demonstrates end-to-end testing using [Cypress](https://www.cypress
   ```sh
   npx cypress run
   ```
-  This will execute all tests in headless mode and output results in the terminal.
+  This will execute all tests in headless mode (no browser UI) and output results in the terminal. By default, Cypress runs in headless mode when using `npx cypress run` in CI/CD or scripts.
+
+- **Run Cypress tests in a specific browser (headless):**
+  ```sh
+  npx cypress run --browser chrome --headless
+  ```
+  Replace `chrome` with `edge`, `firefox`, or another supported browser as needed.
 
 ## Practice Examples
 

@@ -6,6 +6,9 @@ cypress/downloads/
 cypress/screenshots/
 cypress/videos/
 
+# Cypress reports
+cypress/reports/
+
 # OS generated files
 .DS_Store
 Thumbs.db
