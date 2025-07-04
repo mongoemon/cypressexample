@@ -39,4 +39,4 @@ jobs:
         with:
           name: Cypress Tests
           path: cypress/reports/junit/*.xml
-          reporter: mocha-junit
+          reporter: java-junit
