@@ -29,14 +29,3 @@ jobs:
         with:
           name: cypress-html-report
           path: cypress/reports/html
-
-      - name: Run Cypress tests with JUnit report
-        run: npx cypress run --reporter junit --reporter-options "mochaFile=cypress/reports/junit/results-[hash].xml" || true
-
-      - name: Test Report
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: Cypress Tests
-          path: cypress/reports/junit/*.xml
-          reporter: java-junit
