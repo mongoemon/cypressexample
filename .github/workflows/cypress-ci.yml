@@ -1,4 +1,6 @@
 name: Cypress Tests with HTML Report
+permissions:
+  contents: read
 
 on:
   push:
